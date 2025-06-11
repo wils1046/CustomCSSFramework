@@ -1,0 +1,82 @@
+@use '../variables/theme' as theme;
+@use '../variables/typography' as typography;
+
+// Enhanced button base styles with sunset theme
+.btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-family: typography.$font-family-heading;
+    font-size: 0.9rem;
+    font-weight: typography.$font-weight-medium;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.2);
+    
+    // Enhanced shimmer effect
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        transition: left 0.6s;
+    }
+    
+    &:hover::before {
+        left: 100%;
+    }
+    
+    &:focus {
+        outline: 0;
+        box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.3);
+    }
+    
+    &:disabled {
+        opacity: 0.65;
+        cursor: not-allowed;
+    }
+    
+    &:hover:not(:disabled) {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+    }
+}
+
+// Enhanced button variants with sunset gradients
+.btn-primary {
+    background: linear-gradient(135deg, #{map-get(theme.$theme, 'primary')} 0%, #FF8E53 100%);
+    color: white;
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #{map-get(theme.$theme, 'secondary')} 0%, #00A5CC 100%);
+    color: white;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #{map-get(theme.$theme, 'success')} 0%, #0EAD69 100%);
+    color: white;
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #{map-get(theme.$theme, 'danger')} 0%, #D63384 100%);
+    color: white;
+}
+
+.btn-info {
+    background: linear-gradient(135deg, #{map-get(theme.$theme, 'info')} 0%, #FFC107 100%);
+    color: #0F0F23;
+}
