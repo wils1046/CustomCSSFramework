@@ -1,0 +1,59 @@
+@use '../variables/theme' as theme;
+
+// List base styles
+ul, ol {
+    margin: 0;
+    padding: 0;
+    
+    li {
+        margin-bottom: 0.5rem;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// List style utilities - ALL classes used in HTML
+.list-disc {
+    list-style-type: theme.$list-bullet !important;
+    padding-left: 1.5rem !important;
+}
+
+.list-decimal {
+    list-style-type: theme.$list-number !important;
+    padding-left: 1.5rem !important;
+}
+
+.list-lower-alpha {
+    list-style-type: theme.$list-alpha-lower !important;
+    padding-left: 1.5rem !important;
+}
+
+.list-upper-alpha {
+    list-style-type: theme.$list-alpha-upper !important;
+    padding-left: 1.5rem !important;
+}
+
+.list-lower-roman {
+    list-style-type: theme.$list-roman-lower !important;
+    padding-left: 1.5rem !important;
+}
+
+.list-upper-roman {
+    list-style-type: theme.$list-roman-upper !important;
+    padding-left: 2rem !important;
+}
+
+.list-none {
+    list-style: none !important;
+    padding-left: 0 !important;
+}
+
+// Nested list spacing
+ul, ol {
+    ul, ol {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}

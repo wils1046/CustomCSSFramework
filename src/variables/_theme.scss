@@ -1,0 +1,20 @@
+@use './colors' as colors;
+
+// Warm sunset theme mapping with vibrant, energetic colors
+$theme: (
+    primary: colors.$sunset-orange,
+    secondary: colors.$ocean-teal,
+    danger: colors.$coral-red,
+    success: colors.$mint-green,
+    info: colors.$golden-yellow,
+    dark: colors.$charcoal-black,
+    light: colors.$cream-white
+);
+
+//Lists
+$list-bullet: disc;
+$list-number: decimal;
+$list-alpha-lower: lower-alpha;
+$list-alpha-upper: upper-alpha;
+$list-roman-lower: lower-roman;
+$list-roman-upper: upper-roman;
