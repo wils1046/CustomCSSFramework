@@ -1,0 +1,85 @@
+@use '../variables/typography' as typography;
+@use '../variables/theme' as theme;
+
+// Enhanced input base styles with sunset theme
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-family: typography.$font-family-body;
+    font-size: 1rem;
+    font-weight: typography.$font-weight-regular;
+    line-height: 1.5;
+    color: #2D1B1B;
+    background-color: #FFFAFF;
+    background-clip: padding-box;
+    border: 2px solid rgba(255, 210, 63, 0.3);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    
+    &:focus {
+        color: #2D1B1B;
+        background-color: #FFFAFF;
+        border-color: #FF6B35;
+        outline: 0;
+        box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+        transform: translateY(-1px);
+    }
+    
+    &::placeholder {
+        color: #9A8C98;
+        opacity: 1;
+    }
+    
+    &:disabled,
+    &[readonly] {
+        background-color: rgba(255, 250, 255, 0.7);
+        opacity: 1;
+    }
+}
+
+// Textarea specific styles
+textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+// Select specific styles
+select.form-control {
+    &:focus::-ms-value {
+        color: #2D1B1B;
+        background-color: #FFFAFF;
+    }
+}
+
+// Input sizing
+.form-control-sm {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    border-radius: 8px;
+}
+
+.form-control-lg {
+    padding: 1.25rem 1.5rem;
+    font-size: 1.125rem;
+    border-radius: 16px;
+}
+
+// Input states - using sunset theme colors
+.form-control.is-valid {
+    border-color: #3BCEAC;
+    
+    &:focus {
+        border-color: #3BCEAC;
+        box-shadow: 0 0 0 3px rgba(59, 206, 172, 0.25);
+    }
+}
+
+.form-control.is-invalid {
+    border-color: #EE4266;
+    
+    &:focus {
+        border-color: #EE4266;
+        box-shadow: 0 0 0 3px rgba(238, 66, 102, 0.25);
+    }
+}
