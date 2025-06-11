@@ -2,12 +2,3 @@
 @use './base/inter-source';
 @use './base/index' as base;
 @use './variables/index' as variables;
-
-@use "variables/colors";
-@use "variables/borders";
-@use "variables/spacing";
-
-@use "base/colors";     
-@use "base/buttons";
-@use "base/forms";
-@use "base/tables";

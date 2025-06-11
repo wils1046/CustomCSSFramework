@@ -1,0 +1,42 @@
+@use './theme' as theme;
+
+// Vibrant sunset background colors with warm gradients
+.bg-primary {
+    background: linear-gradient(135deg, #FF6B35 0%, #FF8E53 100%) !important;
+    color: white;
+}
+
+.bg-secondary {
+    background: linear-gradient(135deg, #004E64 0%, #00A5CC 100%) !important;
+    color: white;
+}
+
+.bg-success {
+    background: linear-gradient(135deg, #3BCEAC 0%, #0EAD69 100%) !important;
+    color: white;
+}
+
+.bg-danger {
+    background: linear-gradient(135deg, #EE4266 0%, #D63384 100%) !important;
+    color: white;
+}
+
+.bg-info {
+    background: linear-gradient(135deg, #FFD23F 0%, #FFC107 100%) !important;
+    color: #0F0F23;
+}
+
+// Additional background utilities
+.bg-white {
+    background-color: #FFFAFF !important;
+    color: #0F0F23 !important;
+}
+
+.bg-black {
+    background-color: #0F0F23 !important;
+    color: #FFFAFF !important;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}

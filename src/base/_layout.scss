@@ -1,0 +1,127 @@
+@use '../variables/index' as variables;
+
+// Base paragraph styles
+p {
+    margin: 0 0 1.2rem 0;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// Enhanced container with warm sunset glassmorphism effect
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    background: rgba(255, 250, 255, 0.95);
+    border-radius: 24px;
+    box-shadow: 0 25px 50px rgba(255, 107, 53, 0.15);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+// Enhanced grid system
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    
+    > div {
+        background: rgba(255, 250, 255, 0.85);
+        padding: 2rem;
+        border-radius: 16px;
+        box-shadow: 0 8px 25px rgba(255, 107, 53, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        transition: all 0.3s ease;
+        
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(255, 107, 53, 0.15);
+        }
+    }
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    
+    > div {
+        border-radius: 16px;
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        
+        &:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+// Enhanced card component with sunset theme
+.card {
+    background: linear-gradient(145deg, #FFFAFF 0%, #FFF8F0 100%);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(255, 107, 53, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 25px 50px rgba(255, 107, 53, 0.15);
+    }
+    
+    .card-header {
+        padding: 2rem 2.5rem;
+        background: linear-gradient(135deg, #FF6B35 0%, #FF8E53 100%);
+        color: white;
+        border-bottom: none;
+    }
+    
+    .card-body {
+        padding: 2.5rem;
+    }
+    
+    .card-footer {
+        padding: 1.5rem 2.5rem;
+        background: linear-gradient(145deg, #FFF8F0 0%, #FFFAFF 100%);
+        border-top: 1px solid rgba(255, 210, 63, 0.2);
+    }
+}
+
+// Enhanced header with sunset theme
+header {
+    text-align: center;
+    padding: 4rem 0;
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 210, 63, 0.1) 100%);
+    border-radius: 24px;
+    margin: 2rem 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+// Enhanced footer with sunset theme
+.footer {
+    border-top: 1px solid rgba(255, 210, 63, 0.3);
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.05) 0%, rgba(255, 210, 63, 0.05) 100%);
+    padding: 2.5rem 0;
+    border-radius: 0 0 24px 24px;
+    margin-top: 4rem;
+}
+
+// Enhanced section spacing
+section {
+    margin-bottom: 5rem;
+    padding: 2.5rem 0;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

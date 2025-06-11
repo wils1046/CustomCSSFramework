@@ -1,25 +1,8 @@
-// _colors.scss
-
-// Primary Palette
-$color-primary: #2a9d8f;
-$color-secondary: #e9c46a;
-$color-accent: #f4a261;
-$color-danger: #e76f51;
-$color-light: #f1faee;
-$color-dark: #264653;
-
-// Text
-$text-color: #333;
-$link-color: $color-primary;
-.text-accent     { color: $color-accent !important; }
-.bg-accent       { background-color: $color-accent !important; }
-
-.text-danger     { color: $color-danger !important; }
-.bg-danger       { background-color: $color-danger !important; }
-
-.text-light      { color: $color-light !important; }
-.bg-light        { background-color: $color-light !important; }
-
-.text-dark       { color: $color-dark !important; }
-.bg-dark         { background-color: $color-dark !important; color: $color-light !important; } // contrast text
-
+$sunset-orange: #FF6B35;
+$ocean-teal: #004E64;
+$golden-yellow: #FFD23F;
+$coral-red: #EE4266;
+$mint-green: #3BCEAC;
+$charcoal-black: #0F0F23;
+$cream-white: #FFFAFF;
+$soft-gray: #9A8C98;
