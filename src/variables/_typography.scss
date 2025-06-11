@@ -1,0 +1,96 @@
+@use './theme' as theme;
+@use './sizing' as sizing;
+
+// Modern font stack: Inter for headings, Source Sans Pro for body
+$font-family-heading: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$font-family-body: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+// Generate font size utility classes - INCLUDING fs-lg, fs-sm used in HTML
+@each $key, $value in sizing.$sizes {
+    .fs-#{$key} {
+        font-size: #{$value} !important;
+    }
+}
+
+$font-weight-black: 900;
+$font-weight-extrabold: 800;
+$font-weight-bold: 700;
+$font-weight-semibold: 600;
+$font-weight-medium: 500;
+$font-weight-regular: 400;
+$font-weight-light: 300;
+$font-weight-extralight: 200;
+$font-weight-thin: 100;
+
+// Enhanced body with warm sunset gradient
+body {
+    font-family: $font-family-body;
+    font-weight: $font-weight-regular;
+    font-size: map-get(sizing.$sizes, "base");
+    line-height: 1.7;
+    color: #2D1B1B;
+    background: linear-gradient(135deg, #FF6B35 0%, #F7931E 25%, #FFD23F 50%, #FFAAA5 75%, #FF8CC8 100%);
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-heading;
+    margin: 0;
+    font-weight: $font-weight-bold;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+}
+
+h1 {
+    font-weight: $font-weight-extrabold;
+    font-size: map-get(sizing.$sizes, "5xl");
+}
+
+h2 {
+    font-weight: $font-weight-bold;
+    font-size: map-get(sizing.$sizes, "4xl");
+}
+
+h3 {
+    font-weight: $font-weight-bold;
+    font-size: map-get(sizing.$sizes, "3xl");
+}
+
+h4 {
+    font-weight: $font-weight-semibold;
+    font-size: map-get(sizing.$sizes, "2xl");
+}
+
+h5 {
+    font-weight: $font-weight-semibold;
+    font-size: map-get(sizing.$sizes, "xl");
+}
+
+h6 {
+    font-weight: $font-weight-medium;
+    font-size: map-get(sizing.$sizes, "lg");
+}
+
+// Generate text color utility classes - INCLUDING text-primary, text-secondary, etc.
+@each $name, $color in theme.$theme {
+    .text-#{$name} {
+        color: #{$color} !important;
+    }
+}
+
+// Additional text color utilities - INCLUDING text-dark used in HTML
+.text-dark {
+    color: #0F0F23 !important;
+}
+
+.text-light {
+    color: #FFFAFF !important;
+}
+
+.text-white {
+    color: #ffffff !important;
+}
+
+.text-black {
+    color: #000000 !important;
+}
