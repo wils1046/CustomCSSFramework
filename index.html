@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple SCSS Website</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="mt-5 mb-8">
+            <h1 class="text-primary mb-3">Welcome to Our Website</h1>
+            <p class="fs-lg text-secondary">A demonstration of our SCSS structure with various components</p>
+        </header>
+
+        <!-- Typography Section -->
+        <section>
+            <h2 class="text-info mb-4">Typography Examples</h2>
+            <h1 class="mb-2">Heading 1 - Main Title</h1>
+            <h2 class="mb-2">Heading 2 - Section Title</h2>
+            <h3 class="mb-2">Heading 3 - Subsection</h3>
+            <h4 class="mb-2">Heading 4 - Article Title</h4>
+            <h5 class="mb-2">Heading 5 - Paragraph Title</h5>
+            <h6 class="mb-3">Heading 6 - Small Title</h6>
+            <p class="mb-3">This is a regular paragraph with default styling. It demonstrates the base typography settings from our SCSS structure.</p>
+            <p class="fs-sm">Small text example</p>
+            <p class="fs-lg">Large text example</p>
+        </section>
+
+        <!-- Lists Section -->
+        <section>
+            <h2 class="text-success mb-4">List Examples</h2>
+            <div class="grid">
+                <div>
+                    <h4 class="mb-2">Unordered List (Disc)</h4>
+                    <ul class="list-disc mb-4">
+                        <li>First item</li>
+                        <li>Second item</li>
+                        <li>Third item</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="mb-2">Ordered List (Decimal)</h4>
+                    <ol class="list-decimal mb-4">
+                        <li>First step</li>
+                        <li>Second step</li>
+                        <li>Third step</li>
+                    </ol>
+                </div>
+                <div>
+                    <h4 class="mb-2">Alpha List (Lower)</h4>
+                    <ol class="list-lower-alpha mb-4">
+                        <li>Option A</li>
+                        <li>Option B</li>
+                        <li>Option C</li>
+                    </ol>
+                </div>
+                <div>
+                    <h4 class="mb-2">Roman List (Upper)</h4>
+                    <ol class="list-upper-roman mb-4">
+                        <li>Chapter I</li>
+                        <li>Chapter II</li>
+                        <li>Chapter III</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Images Section -->
+        <section>
+            <h2 class="text-info mb-4">Image Examples</h2>
+            <div class="grid">
+                <div>
+                    <h4 class="mb-2">Fluid Image</h4>
+                    <img src="https://placehold.co/300x200" alt="Fluid Image" class="img-fluid mb-3">
+                    <p class="fs-sm">Responsive image that scales with parent container</p>
+                </div>
+                <div>
+                    <h4 class="mb-2">Thumbnail Image</h4>
+                    <img src="https://placehold.co/200x200" alt="Thumbnail" class="img-thumbnail mb-3">
+                    <p class="fs-sm">Image with border and padding</p>
+                </div>
+                <div>
+                    <h4 class="mb-2">Rounded Image</h4>
+                    <img src="https://placehold.co/200x200" alt="Rounded" class="img-rounded mb-3">
+                    <p class="fs-sm">Image with rounded corners</p>
+                </div>
+                <div>
+                    <h4 class="mb-2">Circle Image</h4>
+                    <img src="https://placehold.co/200x200" alt="Circle" class="img-circle mb-3">
+                    <p class="fs-sm">Circular cropped image</p>
+                </div>
+            </div>
+            
+            <div class="mt-5">
+                <h4 class="mb-3">Figure with Caption</h4>
+                <figure class="figure">
+                    <img src="https://placehold.co/400x250" alt="Figure Image" class="figure-img img-fluid img-rounded">
+                    <figcaption class="figure-caption">This is a caption for the image above.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Buttons Section -->
+        <section>
+            <h2 class="text-danger mb-4">Button Examples</h2>
+            <div class="mb-3">
+                <button class="btn btn-primary m-2">Primary Button</button>
+                <button class="btn btn-secondary m-2">Secondary Button</button>
+                <button class="btn btn-success m-2">Success Button</button>
+                <button class="btn btn-danger m-2">Danger Button</button>
+            </div>
+        </section>
+
+        <!-- Forms Section -->
+        <section>
+            <h2 class="text-primary mb-4">Form Examples</h2>
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Contact Form</h4>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <select id="subject" class="form-control">
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Support</option>
+                                <option value="sales">Sales</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-control" rows="4" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="reset" class="btn btn-secondary">Reset Form</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tables Section -->
+        <section>
+            <h2 class="text-info mb-4">Table Example</h2>
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Employee Information</h4>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Department</th>
+                                <th>Salary</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John Smith</td>
+                                <td>Software Engineer</td>
+                                <td>Development</td>
+                                <td>$75,000</td>
+                                <td><span class="text-success">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Sarah Johnson</td>
+                                <td>Product Manager</td>
+                                <td>Product</td>
+                                <td>$85,000</td>
+                                <td><span class="text-success">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Mike Davis</td>
+                                <td>Designer</td>
+                                <td>Design</td>
+                                <td>$65,000</td>
+                                <td><span class="text-danger">On Leave</span></td>
+                            </tr>
+                            <tr>
+                                <td>Emily Wilson</td>
+                                <td>Marketing Specialist</td>
+                                <td>Marketing</td>
+                                <td>$55,000</td>
+                                <td><span class="text-success">Active</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Color Showcase -->
+        <section>
+            <h2 class="mb-4">Color Theme Showcase</h2>
+            <div class="color-grid">
+                <div class="bg-primary p-4 text-dark">
+                    <h5>Primary</h5>
+                    <p class="fs-sm">#00008B</p>
+                </div>
+                <div class="bg-secondary p-4 text-dark">
+                    <h5>Secondary</h5>
+                    <p class="fs-sm">#A9A9A9</p>
+                </div>
+                <div class="bg-success p-4 text-dark">
+                    <h5>Success</h5>
+                    <p class="fs-sm">#228B22</p>
+                </div>
+                <div class="bg-danger p-4 text-dark">
+                    <h5>Danger</h5>
+                    <p class="fs-sm">#EE4B2B</p>
+                </div>
+                <div class="bg-info p-4 text-dark">
+                    <h5>Info</h5>
+                    <p class="fs-sm">#0096FF</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-8 pt-4 footer">
+            <p class="text-secondary fs-sm">© 2025 Simple SCSS Website. Built with HTML and SCSS following a modular structure.</p>
+        </footer>
+    </div>
+</body>
+</html>
