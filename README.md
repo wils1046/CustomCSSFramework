@@ -1,6 +1,22 @@
-# Modern SCSS Framework
+# SunsetCSS
 
-A modular, theme-based SCSS framework featuring a vibrant sunset color scheme with modern glassmorphism effects.
+A modern SCSS framework with warm sunset colors and glassmorphism effects.
+
+## About
+
+SunsetCSS is a CSS framework that brings some warmth to your web projects. Instead of the usual cold blues and grays, it uses a sunset-inspired color palette with oranges, teals, and golden yellows. Built with SCSS, it's modular and easy to customize.
+
+The framework includes all the components you'd expect - buttons, forms, cards, tables - but with a modern twist. Think glassmorphism effects, smooth gradients, and that contemporary look everyone's going for these days.
+
+## What's Inside
+
+- **Sunset Colors**: Warm oranges, ocean teals, coral reds, and golden yellows
+- **Clean Structure**: Modular SCSS files that make sense
+- **Modern Effects**: Glassmorphism, gradients, and smooth animations
+- **Responsive**: Works on mobile, tablet, and desktop
+- **Good Typography**: Inter for headings, Source Sans 3 for everything else
+- **Utility Classes**: Spacing, colors, and typography helpers
+- **Easy to Customize**: Change colors and spacing without breaking anything
 
 ## Installation
 
