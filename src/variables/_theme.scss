@@ -1,14 +1,14 @@
 @use './colors' as colors;
 
-//Primary, secondary, danger, success, info, dark, light
+// Warm sunset theme mapping with vibrant, energetic colors
 $theme: (
-    primary: colors.$dark-blue,
-    secondary: colors.$dark-gray,
-    danger: colors.$bright-red,
-    success: colors.$forest-green,
-    info: colors.$bright-blue,
-    dark: colors.$white,
-    light: colors.$black
+    primary: colors.$sunset-orange,
+    secondary: colors.$ocean-teal,
+    danger: colors.$coral-red,
+    success: colors.$mint-green,
+    info: colors.$golden-yellow,
+    dark: colors.$charcoal-black,
+    light: colors.$cream-white
 );
 
 //Lists
