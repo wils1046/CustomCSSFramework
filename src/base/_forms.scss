@@ -1,0 +1,116 @@
+@use '../variables/typography' as typography;
+@use '../variables/theme' as theme;
+
+// Form group styles
+.form-group {
+    margin-bottom: 1.5rem;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// Form label styles
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: typography.$font-weight-medium;
+    color: #333;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+// Form row for inline forms
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+    
+    .form-group {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+}
+
+// Form inline styles
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    
+    .form-group {
+        display: flex;
+        flex: 0 0 auto;
+        flex-flow: row wrap;
+        align-items: center;
+        margin-bottom: 0;
+        margin-right: 1rem;
+    }
+    
+    .form-label {
+        margin-right: 0.5rem;
+        margin-bottom: 0;
+    }
+    
+    .form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+    }
+}
+
+// Form check styles (for checkboxes and radios)
+.form-check {
+    position: relative;
+    display: block;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    
+    .form-check-input {
+        position: absolute;
+        margin-top: 0.25rem;
+        margin-left: -1.5rem;
+    }
+    
+    .form-check-label {
+        margin-bottom: 0;
+        cursor: pointer;
+    }
+}
+
+// Form validation styles
+.valid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: map-get(theme.$theme, 'success');
+}
+
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: map-get(theme.$theme, 'danger');
+}
+
+.was-validated .form-control:valid ~ .valid-feedback,
+.form-control.is-valid ~ .valid-feedback {
+    display: block;
+}
+
+.was-validated .form-control:invalid ~ .invalid-feedback,
+.form-control.is-invalid ~ .invalid-feedback {
+    display: block;
+}
+
+// Form help text
+.form-text {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: #6c757d;
+}
